@@ -77,11 +77,23 @@ body {
 }
 
 .menu__link {
-    transition: all .4s ease 0s;
+    position: relative;
+    padding: 0 10px;
 }
 
-.menu__link:hover {
-    text-decoration: underline 2px;
+.menu__link:after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.menu__link:hover:after {
+    width: 100%;
 }
 
 .menu__btn {
