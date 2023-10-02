@@ -91,12 +91,11 @@ body {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    transition: padding .6s ease .0s;
+     transition: transform 0.5s ease;
 }
 
 .menu__btn:hover {
-    padding: 15px 64px;
-    transform: translate(0, 0);
+    transform: scale(1.05);
 }
 
 /* =============== HEADER__CONTENT =============== */
@@ -200,6 +199,11 @@ body {
     border-radius: 20px;
     border: 1px solid #777;
     padding: 50px 55px;
+    transition: transform 0.5s ease;
+}
+
+.choose__color-btn:hover {
+    transform: scale(1.05);
 }
 
 .choose__color-btn--active {
